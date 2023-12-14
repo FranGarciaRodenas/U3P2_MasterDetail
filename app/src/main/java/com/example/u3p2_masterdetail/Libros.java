@@ -1,15 +1,18 @@
 package com.example.u3p2_masterdetail;
 
+import androidx.room.Entity;
+
+@Entity
 public class Libros {
         private String title;
         private String author;
         private int coverImage;
         private String description;
 
-        public Libros(String title, String author, int coverImage, String description) {
+        public Libros(String title, String author, /*int coverImage,*/ String description) {
                 this.title = title;
                 this.author = author;
-                this.coverImage = coverImage;
+               // this.coverImage = coverImage;
                 this.description = description;
         }
 
